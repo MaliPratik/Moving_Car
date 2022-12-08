@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.sky{
+    height:80vh ;
+    width: 200%;
+    background-image: url(background.jpg);
+    position: absolute;
+    animation: skyMove linear .4s infinite;
+    
+}
+.trees{
+    height: 100vh;
+    width: 800vw;
+    background-image: url(trees.png);
+    position: absolute;
+    animation: treeMove linear 10s infinite;
+
+}
+.track{
+    width: 800vw;
+    height: 60VH;
+    background-image: url(track.png);
+    position: absolute;
+    TOP: 85vh;
+    animation: carMove linear 14s infinite;
+
+
+}
+.car{
+    height: 100px;
+    width: 380px;
+    background-image: url(car_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -35px;
+    left: 300px;
+    animation:  linear .3s infinite;
+}
+.wheel1 img{
+    width: 77px;
+    position: relative;
+    top: 42px;
+    left: 42px;
+    animation: wheelRotation linear .16s infinite;
+}
+.wheel2 img{
+    width: 77px;
+    position: relative;
+    top: -39px;
+    left: 235px;
+    animation: wheelRotation linear .16s infinite;
+}
+
+@keyframes wheelRotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes carJump{
+    0%{
+        transform: translateY(px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+
+}
+@keyframes treeMove{
+    
+   100%{
+        transform: translateX(-400vw);
+    }
+    /* 10%{
+        transform: translateX(10px);
+    } */
+}
+
+/* @keyframes skyMove{
+
+    /* 100%{
+        transform: translateX(-500vw);
+    } */
+    0%{
+
+        transform: translateX(-20px);
+    }
+    20%{
+        transform: translateX(20px);
+    }
+    40%{
+        transform: translateX(-2px);
+    }
+    60%{
+        transform: translateX(2px);
+    }
+    80%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(2px);
+    }
+} */
+
+
+    
